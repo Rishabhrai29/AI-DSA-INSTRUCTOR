@@ -383,7 +383,7 @@ document.getElementById("generateBtn").addEventListener("click", () => {
     outputDiv.style.display = 'none';
     outputDiv.classList.remove('show');
 
-    fetch("https://ai-dsa-instructor-3.onrender.com", {
+    fetch("https://ai-dsa-instructor-3.onrender.com/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ topic: topic })
